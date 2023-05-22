@@ -17,7 +17,7 @@
                 <button type="submit" class="btn btn-danger"  name="post-id" value={{post.id}}> Delete
             </form>
             {% endif %}
-            {% if user.is_staff and has_create_post_permission %}
+            {% if user.is_staff %}
             <form method="post">
                 {% csrf_token %}
                 <button type="submit" class="btn btn-warning" style="margin-top: 10px" name="user-id" value={{post.author.id}}> Ban User

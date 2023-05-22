@@ -29,7 +29,7 @@ def home(request):
             has_create_post_permission = request.user.has_perm('main.create_post')
                 
 
-    return render(request, 'main/home.html', {"posts": posts, 'has_create_post_permission': has_create_post_permission})
+    return render(request, 'main/home.html', {"posts": posts})
 
 
 @login_required(login_url='/login')

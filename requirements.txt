@@ -1,0 +1,6 @@
+dj-database-url==1.2.0
+Django==4.1.4
+django-database-url==1.0.3
+django-bootstrap-v5
+django-crispy-forms
+crispy-bootstrap5
